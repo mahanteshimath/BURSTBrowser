@@ -38,8 +38,8 @@
             this.btnForward = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.tbcBrowsers = new System.Windows.Forms.TabControl();
+            this.btnOpenWallet = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRemoveTab)).BeginInit();
@@ -48,7 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenWallet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,6 +82,7 @@
             this.btnSettings.TabIndex = 8;
             this.btnSettings.TabStop = false;
             this.btnSettings.Zoom = 10;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnRemoveTab
             // 
@@ -171,21 +172,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.panel2.Controls.Add(this.pbLogo);
+            this.panel2.Controls.Add(this.btnOpenWallet);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(33, 56);
             this.panel2.TabIndex = 2;
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.BackgroundImage")));
-            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLogo.Location = new System.Drawing.Point(4, 3);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(25, 25);
-            this.pbLogo.TabIndex = 2;
-            this.pbLogo.TabStop = false;
             // 
             // tbcBrowsers
             // 
@@ -198,6 +189,20 @@
             this.tbcBrowsers.Size = new System.Drawing.Size(1264, 650);
             this.tbcBrowsers.TabIndex = 2;
             this.tbcBrowsers.Selected += new System.Windows.Forms.TabControlEventHandler(this.tbcBrowsers_Selected);
+            // 
+            // btnOpenWallet
+            // 
+            this.btnOpenWallet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnOpenWallet.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenWallet.Image")));
+            this.btnOpenWallet.ImageActive = null;
+            this.btnOpenWallet.Location = new System.Drawing.Point(4, 2);
+            this.btnOpenWallet.Name = "btnOpenWallet";
+            this.btnOpenWallet.Size = new System.Drawing.Size(25, 25);
+            this.btnOpenWallet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnOpenWallet.TabIndex = 0;
+            this.btnOpenWallet.TabStop = false;
+            this.btnOpenWallet.Zoom = 10;
+            this.btnOpenWallet.Click += new System.EventHandler(this.btnOpenWallet_Click);
             // 
             // FrmMain
             // 
@@ -220,7 +225,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenWallet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,7 +233,6 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pbLogo;
         private Bunifu.Framework.UI.BunifuImageButton btnBack;
         private Bunifu.Framework.UI.BunifuImageButton btnForward;
         private Bunifu.Framework.UI.BunifuImageButton btnGo;
@@ -237,6 +241,7 @@
         private System.Windows.Forms.TabControl tbcBrowsers;
         private Bunifu.Framework.UI.BunifuImageButton btnRemoveTab;
         private Bunifu.Framework.UI.BunifuImageButton btnSettings;
+        private Bunifu.Framework.UI.BunifuImageButton btnOpenWallet;
     }
 }
 

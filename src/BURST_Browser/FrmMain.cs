@@ -59,14 +59,14 @@ namespace BURST_Browser
             }
         }
 
-        private void CreateNewTabbedPageBrowser()
+        private void CreateNewTabbedPageBrowser(string url = "https://www.google.com")
         {
             TabPage tab = new TabPage();
             tab.Text = "New Tab";
             WebBrowser webBrowser = new WebBrowser() {ScriptErrorsSuppressed = true};
             webBrowser.Parent = tab;
             webBrowser.Dock = DockStyle.Fill;
-            webBrowser.Navigate("https://www.google.com");
+            webBrowser.Navigate(url);
 
             webBrowser.DocumentCompleted += webBrowser_DocumentCompleted;
             webBrowser.DocumentTitleChanged += webBrowser_DocumentTitleChanged;
@@ -101,6 +101,11 @@ namespace BURST_Browser
             {
                 txtUrl.Text = _currentWebBrowser.Document.Url.AbsoluteUri;
             }
+        }
+
+        private void btnOpenWallet_Click(object sender, EventArgs e)
+        {
+            CreateNewTabbedPageBrowser("http://localhost:8125");
         }
     }
 }
