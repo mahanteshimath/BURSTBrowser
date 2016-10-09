@@ -51,7 +51,16 @@ namespace BURST_Browser
         {
             if (tbcBrowsers.TabCount >= 2)
             {
-                tbcBrowsers.TabPages.Remove(tbcBrowsers.SelectedTab);
+                int tabIndex = tbcBrowsers.SelectedIndex;
+                tbcBrowsers.TabPages.RemoveAt(tabIndex);
+                if (tabIndex == tbcBrowsers.TabCount)
+                {
+                    tbcBrowsers.SelectTab(tabIndex - 1);
+                }
+                else
+                {
+                    tbcBrowsers.SelectTab(tabIndex);
+                }
             }
             else
             {
