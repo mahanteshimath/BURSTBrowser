@@ -68,7 +68,7 @@ namespace BURST_Browser
             }
         }
 
-        private void CreateNewTabbedPageBrowser(string url = "https://www.google.com")
+        private void CreateNewTabbedPageBrowser(string url = "https://www.burst-team.us/")
         {
             TabPage tab = new TabPage();
             tab.Text = "New Tab";
@@ -115,6 +115,32 @@ namespace BURST_Browser
         private void btnOpenWallet_Click(object sender, EventArgs e)
         {
             CreateNewTabbedPageBrowser("http://localhost:8125");
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings FrmSettings = new FrmSettings();
+            FrmSettings.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            _currentWebBrowser.Navigate("www.google.com");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            _currentWebBrowser.Navigate("https://forums.burst-team.us/topic/1284/ann-the-n-e-w-s-asset-launch");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

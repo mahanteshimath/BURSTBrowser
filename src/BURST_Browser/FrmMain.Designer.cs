@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSettings = new Bunifu.Framework.UI.BunifuImageButton();
@@ -38,8 +39,16 @@
             this.btnForward = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tbcBrowsers = new System.Windows.Forms.TabControl();
             this.btnOpenWallet = new Bunifu.Framework.UI.BunifuImageButton();
+            this.tbcBrowsers = new System.Windows.Forms.TabControl();
+            this.adBox2 = new System.Windows.Forms.PictureBox();
+            this.adBox3 = new System.Windows.Forms.PictureBox();
+            this.adBox4 = new System.Windows.Forms.PictureBox();
+            this.adBox1 = new System.Windows.Forms.PictureBox();
+            this.adBox5 = new System.Windows.Forms.PictureBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRemoveTab)).BeginInit();
@@ -49,6 +58,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenWallet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,7 +78,7 @@
             this.panel1.Controls.Add(this.btnForward);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 23);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 30);
             this.panel1.TabIndex = 1;
@@ -178,18 +192,6 @@
             this.panel2.Size = new System.Drawing.Size(33, 56);
             this.panel2.TabIndex = 2;
             // 
-            // tbcBrowsers
-            // 
-            this.tbcBrowsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbcBrowsers.Location = new System.Drawing.Point(0, 31);
-            this.tbcBrowsers.Name = "tbcBrowsers";
-            this.tbcBrowsers.SelectedIndex = 0;
-            this.tbcBrowsers.Size = new System.Drawing.Size(1264, 650);
-            this.tbcBrowsers.TabIndex = 2;
-            this.tbcBrowsers.Selected += new System.Windows.Forms.TabControlEventHandler(this.tbcBrowsers_Selected);
-            // 
             // btnOpenWallet
             // 
             this.btnOpenWallet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
@@ -204,13 +206,110 @@
             this.btnOpenWallet.Zoom = 10;
             this.btnOpenWallet.Click += new System.EventHandler(this.btnOpenWallet_Click);
             // 
+            // tbcBrowsers
+            // 
+            this.tbcBrowsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbcBrowsers.Location = new System.Drawing.Point(0, 54);
+            this.tbcBrowsers.Name = "tbcBrowsers";
+            this.tbcBrowsers.SelectedIndex = 0;
+            this.tbcBrowsers.Size = new System.Drawing.Size(1264, 599);
+            this.tbcBrowsers.TabIndex = 2;
+            this.tbcBrowsers.Selected += new System.Windows.Forms.TabControlEventHandler(this.tbcBrowsers_Selected);
+            // 
+            // adBox2
+            // 
+            this.adBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox2.BackgroundImage")));
+            this.adBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox2.Location = new System.Drawing.Point(146, 655);
+            this.adBox2.Name = "adBox2";
+            this.adBox2.Size = new System.Drawing.Size(320, 40);
+            this.adBox2.TabIndex = 4;
+            this.adBox2.TabStop = false;
+            // 
+            // adBox3
+            // 
+            this.adBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox3.BackgroundImage")));
+            this.adBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox3.Location = new System.Drawing.Point(472, 655);
+            this.adBox3.Name = "adBox3";
+            this.adBox3.Size = new System.Drawing.Size(320, 40);
+            this.adBox3.TabIndex = 5;
+            this.adBox3.TabStop = false;
+            this.adBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // adBox4
+            // 
+            this.adBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox4.BackgroundImage")));
+            this.adBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox4.Location = new System.Drawing.Point(798, 655);
+            this.adBox4.Name = "adBox4";
+            this.adBox4.Size = new System.Drawing.Size(320, 40);
+            this.adBox4.TabIndex = 6;
+            this.adBox4.TabStop = false;
+            this.adBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // adBox1
+            // 
+            this.adBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox1.BackgroundImage")));
+            this.adBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox1.Location = new System.Drawing.Point(4, 655);
+            this.adBox1.Name = "adBox1";
+            this.adBox1.Size = new System.Drawing.Size(136, 40);
+            this.adBox1.TabIndex = 7;
+            this.adBox1.TabStop = false;
+            // 
+            // adBox5
+            // 
+            this.adBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox5.BackgroundImage")));
+            this.adBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox5.Location = new System.Drawing.Point(1124, 655);
+            this.adBox5.Name = "adBox5";
+            this.adBox5.Size = new System.Drawing.Size(136, 40);
+            this.adBox5.TabIndex = 8;
+            this.adBox5.TabStop = false;
+            this.adBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(5, 5);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(85, 13);
+            this.bunifuCustomLabel1.TabIndex = 9;
+            this.bunifuCustomLabel1.Text = "BURST Browser";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1240, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(20, 20);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1264, 700);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bunifuCustomLabel1);
+            this.Controls.Add(this.adBox5);
+            this.Controls.Add(this.adBox1);
+            this.Controls.Add(this.adBox4);
+            this.Controls.Add(this.adBox3);
+            this.Controls.Add(this.adBox2);
             this.Controls.Add(this.tbcBrowsers);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -226,7 +325,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenWallet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -242,6 +347,14 @@
         private Bunifu.Framework.UI.BunifuImageButton btnRemoveTab;
         private Bunifu.Framework.UI.BunifuImageButton btnSettings;
         private Bunifu.Framework.UI.BunifuImageButton btnOpenWallet;
+        private System.Windows.Forms.PictureBox adBox2;
+        private System.Windows.Forms.PictureBox adBox3;
+        private System.Windows.Forms.PictureBox adBox4;
+        private System.Windows.Forms.PictureBox adBox1;
+        private System.Windows.Forms.PictureBox adBox5;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
