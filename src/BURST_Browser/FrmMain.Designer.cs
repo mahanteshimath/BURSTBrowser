@@ -49,6 +49,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRemoveTab)).BeginInit();
@@ -96,6 +97,7 @@
             this.btnSettings.TabIndex = 8;
             this.btnSettings.TabStop = false;
             this.btnSettings.Zoom = 10;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click_1);
             // 
             // btnRemoveTab
             // 
@@ -210,11 +212,12 @@
             this.tbcBrowsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbcBrowsers.Location = new System.Drawing.Point(0, 54);
+            this.tbcBrowsers.Location = new System.Drawing.Point(0, 56);
             this.tbcBrowsers.Name = "tbcBrowsers";
             this.tbcBrowsers.SelectedIndex = 0;
-            this.tbcBrowsers.Size = new System.Drawing.Size(1264, 599);
+            this.tbcBrowsers.Size = new System.Drawing.Size(1264, 597);
             this.tbcBrowsers.TabIndex = 2;
+            this.tbcBrowsers.SelectedIndexChanged += new System.EventHandler(this.tbcBrowsers_SelectedIndexChanged);
             this.tbcBrowsers.Selected += new System.Windows.Forms.TabControlEventHandler(this.tbcBrowsers_Selected);
             // 
             // adBox2
@@ -258,6 +261,7 @@
             this.adBox1.Size = new System.Drawing.Size(136, 40);
             this.adBox1.TabIndex = 7;
             this.adBox1.TabStop = false;
+            this.adBox1.Click += new System.EventHandler(this.adBox1_Click);
             // 
             // adBox5
             // 
@@ -354,6 +358,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

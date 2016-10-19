@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace BURST_Browser
 {
@@ -26,6 +27,32 @@ namespace BURST_Browser
         private void btnClose_Click(object sender, System.EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnExit_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FrmSettings_Load(object sender, System.EventArgs e)
+        {
+            lblTime.Text = System.DateTime.Now.ToShortTimeString();
+        }
+
+        private void lblTime_Click(object sender, System.EventArgs e)
+        {
+            
+        }
+
+        private void btnQuestion_Click(object sender, System.EventArgs e)
+        {
+            WebBrowser webBrowser = new WebBrowser();
+            webBrowser.Navigate("http://forums.burst-team.us/");
         }
     }
 }

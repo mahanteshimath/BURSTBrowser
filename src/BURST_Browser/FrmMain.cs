@@ -17,6 +17,11 @@ namespace BURST_Browser
         private void FrmMain_Load(object sender, EventArgs e)
         {
             CreateNewTabbedPageBrowser();
+
+
+            _currentWebBrowser.ScriptErrorsSuppressed = true;
+
+
         }
 
         private void txtUrl_KeyPress(object sender, KeyPressEventArgs e)
@@ -141,6 +146,22 @@ namespace BURST_Browser
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSettings_Click_1(object sender, EventArgs e)
+        {
+            FrmSettings frmSettings = new FrmSettings();
+            frmSettings.Show();
+        }
+
+        private void adBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcBrowsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
