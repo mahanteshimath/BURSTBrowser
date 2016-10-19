@@ -131,11 +131,6 @@
     <EmbeddedResource Include="FrmSettings.resx">
       <DependentUpon>FrmSettings.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <None Include="packages.config" />
-=======
-    <None Include="Properties\app.manifest" />
->>>>>>> 063129459d5adb68c60da132fba18816f33ea455
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
