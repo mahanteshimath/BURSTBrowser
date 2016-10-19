@@ -96,7 +96,6 @@
             this.btnSettings.TabIndex = 8;
             this.btnSettings.TabStop = false;
             this.btnSettings.Zoom = 10;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnRemoveTab
             // 
