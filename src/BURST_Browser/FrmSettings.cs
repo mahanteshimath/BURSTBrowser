@@ -54,5 +54,10 @@ namespace BURST_Browser
             WebBrowser webBrowser = new WebBrowser();
             webBrowser.Navigate("http://forums.burst-team.us/");
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            
+        }
     }
 }

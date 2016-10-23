@@ -41,15 +41,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnOpenWallet = new Bunifu.Framework.UI.BunifuImageButton();
             this.tbcBrowsers = new System.Windows.Forms.TabControl();
-            this.adBox2 = new System.Windows.Forms.PictureBox();
-            this.adBox3 = new System.Windows.Forms.PictureBox();
-            this.adBox4 = new System.Windows.Forms.PictureBox();
-            this.adBox1 = new System.Windows.Forms.PictureBox();
-            this.adBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnClose = new System.Windows.Forms.Button();
+            this.adBox1 = new System.Windows.Forms.PictureBox();
+            this.adBox2 = new System.Windows.Forms.PictureBox();
+            this.adBox3 = new System.Windows.Forms.PictureBox();
+            this.btnMaximize = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRemoveTab)).BeginInit();
@@ -59,11 +59,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenWallet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -212,67 +210,13 @@
             this.tbcBrowsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbcBrowsers.Location = new System.Drawing.Point(0, 56);
+            this.tbcBrowsers.Location = new System.Drawing.Point(0, 54);
             this.tbcBrowsers.Name = "tbcBrowsers";
             this.tbcBrowsers.SelectedIndex = 0;
-            this.tbcBrowsers.Size = new System.Drawing.Size(1264, 597);
+            this.tbcBrowsers.Size = new System.Drawing.Size(1264, 599);
             this.tbcBrowsers.TabIndex = 2;
             this.tbcBrowsers.SelectedIndexChanged += new System.EventHandler(this.tbcBrowsers_SelectedIndexChanged);
             this.tbcBrowsers.Selected += new System.Windows.Forms.TabControlEventHandler(this.tbcBrowsers_Selected);
-            // 
-            // adBox2
-            // 
-            this.adBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox2.BackgroundImage")));
-            this.adBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.adBox2.Location = new System.Drawing.Point(146, 655);
-            this.adBox2.Name = "adBox2";
-            this.adBox2.Size = new System.Drawing.Size(320, 40);
-            this.adBox2.TabIndex = 4;
-            this.adBox2.TabStop = false;
-            // 
-            // adBox3
-            // 
-            this.adBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox3.BackgroundImage")));
-            this.adBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.adBox3.Location = new System.Drawing.Point(472, 655);
-            this.adBox3.Name = "adBox3";
-            this.adBox3.Size = new System.Drawing.Size(320, 40);
-            this.adBox3.TabIndex = 5;
-            this.adBox3.TabStop = false;
-            this.adBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // adBox4
-            // 
-            this.adBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox4.BackgroundImage")));
-            this.adBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.adBox4.Location = new System.Drawing.Point(798, 655);
-            this.adBox4.Name = "adBox4";
-            this.adBox4.Size = new System.Drawing.Size(320, 40);
-            this.adBox4.TabIndex = 6;
-            this.adBox4.TabStop = false;
-            this.adBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // adBox1
-            // 
-            this.adBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox1.BackgroundImage")));
-            this.adBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.adBox1.Location = new System.Drawing.Point(4, 655);
-            this.adBox1.Name = "adBox1";
-            this.adBox1.Size = new System.Drawing.Size(136, 40);
-            this.adBox1.TabIndex = 7;
-            this.adBox1.TabStop = false;
-            this.adBox1.Click += new System.EventHandler(this.adBox1_Click);
-            // 
-            // adBox5
-            // 
-            this.adBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adBox5.BackgroundImage")));
-            this.adBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.adBox5.Location = new System.Drawing.Point(1124, 655);
-            this.adBox5.Name = "adBox5";
-            this.adBox5.Size = new System.Drawing.Size(136, 40);
-            this.adBox5.TabIndex = 8;
-            this.adBox5.TabStop = false;
-            this.adBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // bunifuElipse1
             // 
@@ -288,28 +232,88 @@
             this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "BURST Browser";
             // 
-            // button1
+            // btnClose
             // 
-            this.button1.Location = new System.Drawing.Point(1240, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(20, 20);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Location = new System.Drawing.Point(1240, 1);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 20);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // adBox1
+            // 
+            this.adBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.adBox1.BackColor = System.Drawing.Color.White;
+            this.adBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox1.Image = ((System.Drawing.Image)(resources.GetObject("adBox1.Image")));
+            this.adBox1.Location = new System.Drawing.Point(139, 656);
+            this.adBox1.Name = "adBox1";
+            this.adBox1.Size = new System.Drawing.Size(325, 40);
+            this.adBox1.TabIndex = 11;
+            this.adBox1.TabStop = false;
+            // 
+            // adBox2
+            // 
+            this.adBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.adBox2.BackColor = System.Drawing.Color.White;
+            this.adBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox2.Image = ((System.Drawing.Image)(resources.GetObject("adBox2.Image")));
+            this.adBox2.Location = new System.Drawing.Point(470, 656);
+            this.adBox2.Name = "adBox2";
+            this.adBox2.Size = new System.Drawing.Size(325, 40);
+            this.adBox2.TabIndex = 12;
+            this.adBox2.TabStop = false;
+            // 
+            // adBox3
+            // 
+            this.adBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.adBox3.BackColor = System.Drawing.Color.White;
+            this.adBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adBox3.Image = ((System.Drawing.Image)(resources.GetObject("adBox3.Image")));
+            this.adBox3.Location = new System.Drawing.Point(801, 656);
+            this.adBox3.Name = "adBox3";
+            this.adBox3.Size = new System.Drawing.Size(325, 40);
+            this.adBox3.TabIndex = 13;
+            this.adBox3.TabStop = false;
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.Location = new System.Drawing.Point(1220, 1);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(20, 20);
+            this.btnMaximize.TabIndex = 14;
+            this.btnMaximize.Text = "🗖 ";
+            this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.Location = new System.Drawing.Point(1200, 1);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(20, 20);
+            this.btnMinimize.TabIndex = 15;
+            this.btnMinimize.Text = "🗕 ";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 700);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(this.adBox5);
-            this.Controls.Add(this.adBox1);
-            this.Controls.Add(this.adBox4);
+            this.Controls.Add(this.btnMinimize);
+            this.Controls.Add(this.btnMaximize);
             this.Controls.Add(this.adBox3);
             this.Controls.Add(this.adBox2);
+            this.Controls.Add(this.adBox1);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.tbcBrowsers);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -318,6 +322,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BURST Browser";
             this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSettings)).EndInit();
@@ -328,11 +335,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenWallet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,15 +355,15 @@
         private Bunifu.Framework.UI.BunifuImageButton btnRemoveTab;
         private Bunifu.Framework.UI.BunifuImageButton btnSettings;
         private Bunifu.Framework.UI.BunifuImageButton btnOpenWallet;
-        private System.Windows.Forms.PictureBox adBox2;
-        private System.Windows.Forms.PictureBox adBox3;
-        private System.Windows.Forms.PictureBox adBox4;
-        private System.Windows.Forms.PictureBox adBox1;
-        private System.Windows.Forms.PictureBox adBox5;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.PictureBox adBox1;
+        private System.Windows.Forms.PictureBox adBox2;
+        private System.Windows.Forms.PictureBox adBox3;
+        private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Button btnMaximize;
     }
 }
 

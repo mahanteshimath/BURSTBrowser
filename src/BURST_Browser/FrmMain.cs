@@ -14,6 +14,9 @@ namespace BURST_Browser
             InitializeComponent();
         }
 
+        int mouseX = 0, mouseY = 0;
+        bool mouseDown;
+
         private void FrmMain_Load(object sender, EventArgs e)
         {
             CreateNewTabbedPageBrowser();
@@ -162,6 +165,44 @@ namespace BURST_Browser
         private void tbcBrowsers_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmMain_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void FrmMain_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            this.MinimumSize = this.Size;
+            this.MaximumSize = this.Size;
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void FrmMain_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
         }
     }
 }
